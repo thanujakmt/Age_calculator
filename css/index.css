@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100vh;
+  background-color: hsl(0, 0%, 86%);
+}
+.main .sub_main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .sub_main .first_row .first_column {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 30px 30px 200px 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.main .sub_main .first_row form {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.main .sub_main .first_row form .dateofbirth {
+  margin: 15px;
+}
+.main .sub_main .first_row form .dateofbirth label {
+  color: hsl(0, 0%, 8%);
+  font-weight: 500;
+  font-size: 0.8em;
+  margin: 8px;
+}
+.main .sub_main .first_row form .dateofbirth input {
+  width: 80px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 900;
+}
+.main .sub_main .first_row .line-with-image {
+  display: flex;
+  align-items: center;
+}
+.main .sub_main .first_row .line-with-image .line {
+  flex-grow: 1;
+  border-top: 1px solid hsl(0, 0%, 86%);
+}
+.main .sub_main .first_row .line-with-image img {
+  background-color: hsl(259, 100%, 65%);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.age .years, .age .month, .age .days {
+  display: flex;
+}
+.age .years p, .age .month p, .age .days p {
+  padding: 5px;
+  font-size: 4.2em;
+  font-weight: 1000;
+  color: hsl(0, 0%, 8%);
+  margin: 10px;
+}
+.age .years span, .age .month span, .age .days span {
+  margin: 10px;
+  padding: 5px;
+  font-size: 3em;
+  font-weight: 1000;
+  color: hsl(259, 100%, 65%);
+}
+
+@media only screen and (min-width: 1030px) {
+  .dateofbirth {
+    margin: 15px;
+  }
+  .dateofbirth label {
+    color: hsl(0, 0%, 8%);
+    font-weight: 500 !important;
+    font-size: 1em !important;
+    margin: 8px;
+    color: hsl(259, 100%, 65%);
+  }
+  .dateofbirth input {
+    width: 150px !important;
+    padding: 15px;
+    font-size: 18px !important;
+    font-weight: 1000 !important;
+  }
+  .first_row .first_column {
+    width: 1000px;
+    height: 600px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px 30px 200px 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .line-with-image {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+  }
+  .line-with-image .line {
+    flex-grow: 1;
+    border-top: 1px solid hsl(0, 0%, 86%);
+  }
+  .line-with-image img {
+    background-color: hsl(259, 100%, 65%);
+    padding: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 150px;
+  }
+}

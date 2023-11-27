@@ -1,0 +1,135 @@
+
+$purple : hsl(259, 100%, 65%);
+$Light_red: hsl(0, 100%, 67%);
+$White: hsl(0, 0%, 100%);
+$Off_white: hsl(0, 0%, 94%);
+$Light_grey: hsl(0, 0%, 86%);
+$Smokey_grey: hsl(0, 1%, 44%);
+$Off_black: hsl(0, 0%, 8%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    background-color: $Light_grey;
+    .sub_main{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .first_row{
+            .first_column{
+                // width: 800px;
+                background-color: $White;
+                border-radius: 30px 30px 200px 30px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+            form{
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                .dateofbirth{
+                    margin: 15px;
+                    label{
+                        color: $Off_black;
+                        font-weight: 500;
+                        font-size: 0.8em;
+                        margin: 8px;
+                    }
+                    input{
+                        width: 80px;
+                        padding: 15px;
+                        font-size: 18px;
+                        font-weight: 900;
+                    }
+                }
+            }
+            .line-with-image{
+                display: flex;
+                align-items: center;
+                .line{
+                    flex-grow: 1;
+                    border-top: 1px solid $Light_grey;
+                }
+                img{
+                    background-color: $purple;
+                    padding: 15px;
+                    border-radius: 50%;
+                    
+                }
+            }
+        }
+    }
+}
+.age{
+    .years,.month,.days{
+        display: flex;
+        p{
+            padding: 5px;
+            font-size: 4.2em;
+            font-weight: 1000;
+            color: $Off_black;
+             margin: 10px;
+
+        }
+        span{
+            margin: 10px;
+            padding: 5px;
+            font-size: 3em;
+            font-weight: 1000;
+            color: $purple;
+
+        }
+    }
+}
+@media only screen and (min-width: 1030px) {
+    .dateofbirth{
+        margin: 15px;
+        label{
+            color: $Off_black;
+            font-weight: 500 !important;
+            font-size: 1em !important;
+            margin: 8px;
+            color: $purple;
+        }
+        input{
+            width: 150px !important;
+            padding: 15px;
+            font-size: 18px !important;
+            font-weight: 1000 !important;
+        }
+         
+}
+.first_row{
+    .first_column{
+        width: 1000px;
+        height: 600px;
+        background-color: $White;
+        border-radius: 30px 30px 200px 30px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+    .line-with-image{
+        display: flex;
+        align-items: center;
+        margin: 30px;
+        .line{
+            flex-grow: 1;
+            border-top: 1px solid $Light_grey;
+        }
+        img{
+            background-color: $purple;
+            padding: 15px;
+            border-radius: 50%;
+            position: absolute;
+            left: 150px;                    
+        }
+    }
+  }
